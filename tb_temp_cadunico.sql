@@ -1,0 +1,36 @@
+DROP TABLE IF EXISTS temporario.tb_temp_cadunico;
+CREATE TABLE temporario.tb_temp_cadunico (
+    codigo_ibge INTEGER,
+    referencia VARCHAR,
+    nome_municipio VARCHAR,
+    UF CHAR,
+    qtde_familias_nbf_rede INTEGER,
+    qtde_familias_nbf_fossa_septica INTEGER,
+    qtde_familias_nbf_fossa_rudimentar INTEGER,
+    qtde_familias_nbf_vala INTEGER,
+    qtde_familias_nbf_riolagomar INTEGER,
+    qtde_familias_nbf_outras_formas INTEGER,
+    qtde_familias_nbf_sem_info INTEGER,
+    qtde_familias_bf_rede INTEGER,
+    qtde_familias_bf_fossa_septica INTEGER,
+    qtde_familias_bf_fossa_rudimentar INTEGER,
+    qtde_familias_bf_vala INTEGER,
+    qtde_familias_bf_riolagomar INTEGER,
+    qtde_familias_bf_outras_formas INTEGER,
+    qtde_familias_bf_sem_info INTEGER,
+    qtde_familias_rede_geral INTEGER,
+    qtde_familias_poco_nascente INTEGER,
+    qtde_familias_cisterna INTEGER,
+    qtde_familias_outras_formas INTEGER,
+    qtde_familias_sem_info INTEGER,
+    qtde_familias_pobreza_urbana INTEGER,
+    qtde_familias_ate_meio_sm_urbana INTEGER,
+    qtde_familias_acima_meio_sm_urbana INTEGER,
+    percentual_familias_pobreza_baixa_renda_urbana INTEGER,
+    qtde_familias_pobreza_rural INTEGER,
+    qtde_familias_ate_meio_sm_rural INTEGER,
+    qtde_familias_acima_meio_sm_rural INTEGER,
+    percentual_familias_pobreza_baixa_renda_rural DECIMAL
+);
+
+SELECT * FROM temporario.tb_temp_cadunico;
